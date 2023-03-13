@@ -1,0 +1,57 @@
+@import "mixins";
+
+body {
+  overflow-x: hidden;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#feed {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    width: 750px;
+    margin: 2rem;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .card-body {
+    padding: 3rem 3rem;
+    @include shadow;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+
+  .star-yellow {
+    color: #ffcd3c;
+  }
+
+  .star-grey {
+    color: grey;
+  }
+
+  .alternate {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

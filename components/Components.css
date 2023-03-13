@@ -1,0 +1,23 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    align-items: center;
+    margin-top: auto;
+    width: 101%;
+}
+
+.navbar-collapse{
+    background: black;
+    width: 100%;
+}
+
+
+
+.star-yellow{
+    color: #ffcd3c;
+}
+
+.star-grey{
+    color: grey;
+}
