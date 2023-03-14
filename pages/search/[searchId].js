@@ -27,15 +27,15 @@ const SearchResults = ({posts}) => {
           return (
               <>
               <h1>YOU ARE ONE CLICK AWAY FROM {toUpper()}</h1>
-                  {/*{*/}
-                  {/*    posts.map(*/}
-                  {/*        post=>{*/}
-                  {/*            const {name, address, rating, num_reviews, photo, timezone,reviews} = post.result_object*/}
-                  {/*            return(*/}
-                  {/*                <Search name={name} address={address} rating={rating} num_reviews={num_reviews} photo={photo} timezone={timezone} reviews={reviews}/>*/}
-                  {/*            )*/}
-                  {/*        })*/}
-                  {/*}*/}
+                  {
+                      posts.map(
+                          post=>{
+                              const {name, address, rating, num_reviews, photo, timezone,reviews} = post.result_object
+                              return(
+                                  <Search name={name} address={address} rating={rating} num_reviews={num_reviews} photo={photo} timezone={timezone} reviews={reviews}/>
+                              )
+                          })
+                  }
               </>
 
           )
